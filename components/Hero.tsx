@@ -1,6 +1,10 @@
+import Slider from "./Slider";
+
 const Hero = () => {
   return (
-    <div className="wrapper section-padding h-[calc(100vh-5rem)] ">Hero</div>
+    <div className="h-[calc(100vh-5rem)] opacity-50 overflow-x-hidden">
+      <Slider />
+    </div>
   );
 };
 

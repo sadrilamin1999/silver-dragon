@@ -19,3 +19,19 @@
 .link-item:hover::after {
   @apply w-full;
 }
+
+/* Slider */
+.slider {
+  /* height: calc(100vh - 5rem); */
+  width: 400vw;
+  display: flex;
+  transition: 1s ease;
+}
+
+.slide {
+  width: 100vw;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
