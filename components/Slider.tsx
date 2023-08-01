@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
+import ExploreBtn from "./ExploreBtn";
 const data = [
   {
     id: 1,
@@ -41,10 +42,30 @@ const Slider = () => {
       >
         {data.map((image) => (
           <div
-            className="slide"
+            className="slide "
             style={{ backgroundImage: `url(${image.src})` }}
             key={image.id}
-          ></div>
+          >
+            <div
+              className="slide-content wrapper flex flex-col items-start justify-center h-full w-full
+            "
+            >
+              <div className=" flex flex-col gap-5 w-full md:w-1/2">
+                <h2 className="text-6xl font-semibold text-accent2">
+                  Lorem ipsum dolor sit amet.
+                </h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Officiis fugit eligendi necessitatibus ipsam, earum cumque,
+                  voluptatem ducimus perspiciatis fuga sed officia maxime
+                  delectus ut quos.
+                </p>
+                <span className="mt-4">
+                  <ExploreBtn />
+                </span>
+              </div>
+            </div>
+          </div>
         ))}
       </div>
       <div className="btns absolute left-0 right-0 bottom-20 m-auto w-fit z-[1] text-dark text-2xl flex gap-10">

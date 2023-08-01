@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ExploreBtn from "./ExploreBtn";
 
 const Navbar = () => {
   return (
@@ -34,6 +35,7 @@ const Navbar = () => {
                 Gallery
               </Link>
             </li>
+            <ExploreBtn />
           </ul>
         </nav>
       </div>
