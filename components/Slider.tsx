@@ -51,10 +51,10 @@ const Slider = () => {
             "
             >
               <div className=" flex flex-col gap-5 w-full md:w-1/2">
-                <h2 className="text-6xl font-semibold text-accent2">
+                <h2 className="text-6xl font-semibold">
                   Lorem ipsum dolor sit amet.
                 </h2>
-                <p>
+                <p className="">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Officiis fugit eligendi necessitatibus ipsam, earum cumque,
                   voluptatem ducimus perspiciatis fuga sed officia maxime
