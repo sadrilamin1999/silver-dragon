@@ -1,6 +1,6 @@
 "use client";
+import { useState } from "react";
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
-
 const data = [
   {
     id: 1,
@@ -21,22 +21,45 @@ const data = [
   },
 ];
 const Slider = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const prevSlide = () => {
+    setCurrentSlide(
+      currentSlide === 0 ? data.length - 1 : (prevSlide) => prevSlide - 1
+    );
+  };
+  const nextSlide = () => {
+    setCurrentSlide(
+      currentSlide === data.length - 1 ? 0 : (prevSlide) => prevSlide + 1
+    );
+  };
   return (
-    <div className="slider relative h-full w-full">
-      {data.map((image) => (
-        <div
-          className="slide"
-          style={{ backgroundImage: `url(${image.src})` }}
-          key={image.id}
-        ></div>
-      ))}
-      <div className="btns absolute z-[1] flex gap-10 text-dark bottom-20 w-screen justify-center">
-        <button className="prev-btn text-2xl bg-light/80 w-16 h-10 flex items-center justify-center hover:bg-light duration-300">
+    <div className="frame relative">
+      <div
+        className="slider h-full w-full"
+        style={{ transform: `translateX(-${100 * currentSlide}vw)` }}
+      >
+        {data.map((image) => (
+          <div
+            className="slide"
+            style={{ backgroundImage: `url(${image.src})` }}
+            key={image.id}
+          ></div>
+        ))}
+      </div>
+      <div className="btns absolute left-0 right-0 bottom-20 m-auto w-fit z-[1] text-dark text-2xl flex gap-10">
+        <button
+          onClick={prevSlide}
+          className="prev-btn bg-light/80 w-16 h-10 flex items-center justify-center hover:bg-light duration-300"
+        >
           <span>
             <FiArrowLeft />
           </span>
         </button>
-        <button className="next-btn text-2xl bg-light/80 w-16 h-10 flex items-center justify-center hover:bg-light duration-300">
+        <button
+          onClick={nextSlide}
+          className="next-btn bg-light/80 w-16 h-10 flex items-center justify-center hover:bg-light duration-300"
+        >
           <span>
             <FiArrowRight />
           </span>
