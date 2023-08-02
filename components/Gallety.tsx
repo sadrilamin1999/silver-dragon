@@ -21,7 +21,7 @@ const Gallery = () => {
             <img
               src={image}
               alt={`Image ${index}`}
-              className=" w-80 h-80  rounded-lg object-cover cursor-pointer hover:scale-125 overflow-hidden duration-300"
+              className=" w-80 h-80  rounded-lg object-cover cursor-pointer hover:scale-125 overflow-hidden duration-700"
             />
           </div>
         ))}
