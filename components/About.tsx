@@ -14,11 +14,11 @@ const About = () => {
           transition={{ ease: "easeInOut", duration: 1, delay: 0.3 }}
         >
           <Image
-            className=" shadow-xl rounded-md cursor-pointer hover:scale-105 duration-300 overflow-hidden"
+            className=" h-full w-4/5 shadow-xl rounded-md cursor-pointer hover:scale-105 duration-300 overflow-hidden"
             src="https://images.pexels.com/photos/3527074/pexels-photo-3527074.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="John Doe's Avatar"
             width={400}
             height={500}
-            alt="martial art man"
           />
         </motion.div>
         <motion.div
