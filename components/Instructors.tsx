@@ -26,6 +26,7 @@ const Instructors = () => {
                   src="https://images.pexels.com/photos/9302152/pexels-photo-9302152.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                   width={300}
                   height={400}
+                  alt="martial art teacher"
                 />
               </span>
               <h4 className="text-2xl mt-5 text-accent2 font-semibold">
@@ -41,6 +42,7 @@ const Instructors = () => {
                   src="https://images.pexels.com/photos/10965962/pexels-photo-10965962.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                   width={300}
                   height={400}
+                  alt="martial artist"
                 />
               </span>
               <h4 className="text-2xl mt-5 text-accent2 font-semibold">
@@ -58,6 +60,7 @@ const Instructors = () => {
                   src="https://images.pexels.com/photos/10761393/pexels-photo-10761393.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                   width={300}
                   height={400}
+                  alt="martial art man"
                 />
               </span>
               <h4 className="text-2xl mt-5 text-accent2 font-semibold">
@@ -75,6 +78,7 @@ const Instructors = () => {
                   src="https://images.pexels.com/photos/7562139/pexels-photo-7562139.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                   width={300}
                   height={400}
+                  alt="martial art champion"
                 />
               </span>
               <h4 className="text-2xl mt-5 text-accent2 font-semibold">

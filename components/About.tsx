@@ -18,6 +18,7 @@ const About = () => {
             src="https://images.pexels.com/photos/3527074/pexels-photo-3527074.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             width={400}
             height={500}
+            alt="martial art man"
           />
         </motion.div>
         <motion.div
